@@ -98,7 +98,7 @@ export function DayView({
 
       {/* Propuestas */}
       {(day.proposals.length > 0 || editor) && (
-        <div className="mt-5 rounded-2xl border border-dashed border-stone-300 bg-stone-50/70 p-3.5 dark:border-stone-700 dark:bg-stone-800/30">
+        <div className="mt-5 rounded-2xl border border-dashed border-stone-400 bg-stone-50 p-3.5 dark:border-stone-600 dark:bg-stone-800/30">
           <p className="mb-2.5 flex items-center gap-1.5 px-1 text-xs font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400">
             💡 Propuestas
           </p>

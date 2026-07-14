@@ -74,7 +74,7 @@ function AttachmentChip({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-1 rounded-full border border-stone-200 bg-white px-2.5 py-1 text-xs font-medium text-stone-700 shadow-sm transition hover:bg-stone-100 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-300 dark:hover:bg-stone-800"
+        className="inline-flex items-center gap-1 rounded-full border border-stone-300 bg-white px-2.5 py-1 text-xs font-medium text-stone-700 shadow-sm transition hover:bg-stone-100 dark:border-stone-600 dark:bg-stone-900 dark:text-stone-300 dark:hover:bg-stone-800"
       >
         {label}
       </a>
@@ -164,7 +164,7 @@ export function ActivityItem({
             {activity.hora}
           </div>
         )}
-        <div className="rounded-2xl border border-stone-200/80 bg-white p-3.5 shadow-sm transition dark:border-stone-800 dark:bg-stone-900/60">
+        <div className="rounded-2xl border border-stone-300 bg-white p-3.5 shadow transition dark:border-stone-700 dark:bg-stone-900/60">
           <div className="flex items-start justify-between gap-2">
             <h4 className="font-semibold leading-snug">{activity.titulo}</h4>
             {editor && (
@@ -200,7 +200,7 @@ export function ActivityItem({
               empty="Sin documentos."
               editor={editor}
               onAdd={() => setAddPdf(true)}
-              addLabel="+ Subir PDF"
+              addLabel="+ Subir archivo"
               tint={c.soft}
             >
               {pdfs.map((att) => (

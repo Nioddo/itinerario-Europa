@@ -90,6 +90,98 @@ function toTimeValue(hora: string | null | undefined): string {
   return m ? `${m[1].padStart(2, "0")}:${m[2]}` : "";
 }
 
+// ------------------------------------------------------------ Campo Horario
+
+const FRANJAS = ["Mañana", "Mediodía", "Tarde", "Noche"];
+
+function parseHora(hora: string | null | undefined): {
+  time: string;
+  franja: string;
+  aprox: boolean;
+} {
+  if (!hora) return { time: "", franja: "", aprox: false };
+  const time = toTimeValue(hora);
+  if (time) return { time, franja: "", aprox: /aprox/i.test(hora) };
+  const clean = (s: string) => s.toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "");
+  const franja = FRANJAS.find((f) => clean(hora).includes(clean(f)));
+  return { time: "", franja: franja ?? "", aprox: false };
+}
+
+/**
+ * Campo de horario: hora exacta (con opción "aprox") o una franja del día.
+ * Emite el string final que se guarda: "14:30", "14:30 aprox", "Tarde"…
+ */
+function HoraField({
+  initial,
+  onChange,
+}: {
+  initial?: string | null;
+  onChange: (hora: string) => void;
+}) {
+  const init = parseHora(initial);
+  const [time, setTime] = useState(init.time);
+  const [franja, setFranja] = useState(init.franja);
+  const [aprox, setAprox] = useState(init.aprox);
+
+  function emit(t: string, f: string, a: boolean) {
+    onChange(f || (t ? (a ? `${t} aprox` : t) : ""));
+  }
+
+  return (
+    <Field label="Horario (opcional)">
+      <div className="flex items-center gap-3">
+        <input
+          type="time"
+          value={time}
+          onChange={(e) => {
+            setTime(e.target.value);
+            setFranja("");
+            emit(e.target.value, "", aprox);
+          }}
+          className={inputClass + " flex-1"}
+        />
+        <label className="flex shrink-0 cursor-pointer items-center gap-1.5 text-sm text-stone-600 dark:text-stone-400">
+          <input
+            type="checkbox"
+            checked={aprox}
+            onChange={(e) => {
+              setAprox(e.target.checked);
+              emit(time, franja, e.target.checked);
+            }}
+            className="h-4 w-4 accent-stone-900 dark:accent-white"
+          />
+          aprox
+        </label>
+      </div>
+      <div className="mt-1.5 flex flex-wrap gap-1">
+        {FRANJAS.map((f) => (
+          <button
+            key={f}
+            type="button"
+            onClick={() => {
+              const next = franja === f ? "" : f;
+              setFranja(next);
+              setTime("");
+              emit("", next, aprox);
+            }}
+            className={
+              "rounded-full border px-3 py-1 text-xs font-medium transition " +
+              (franja === f
+                ? "border-stone-900 bg-stone-900 text-white dark:border-white dark:bg-white dark:text-stone-900"
+                : "border-stone-300 bg-white text-stone-600 hover:border-stone-400 dark:border-stone-600 dark:bg-stone-800 dark:text-stone-300")
+            }
+          >
+            {f}
+          </button>
+        ))}
+      </div>
+      <p className="mt-1 text-xs text-stone-400">
+        Elegí una hora exacta (podés marcarla como aprox) o una franja del día.
+      </p>
+    </Field>
+  );
+}
+
 // ------------------------------------------------------------ Actividad
 
 export function ActivityModal({
@@ -103,7 +195,7 @@ export function ActivityModal({
 }) {
   const editing = Boolean(activity);
   const { busy, error, submit } = useSubmit();
-  const [hora, setHora] = useState(toTimeValue(activity?.hora));
+  const [hora, setHora] = useState(activity?.hora ?? "");
   const [titulo, setTitulo] = useState(activity?.titulo ?? "");
   const [descripcion, setDescripcion] = useState(activity?.descripcion ?? "");
   const [icono, setIcono] = useState(activity?.icono ?? "");
@@ -133,20 +225,7 @@ export function ActivityModal({
             placeholder="¿Qué hacemos?"
           />
         </Field>
-        <Field label="Horario (opcional)">
-          <input
-            type="time"
-            value={hora}
-            onChange={(e) => setHora(e.target.value)}
-            className={inputClass}
-          />
-          {editing && activity!.hora && !toTimeValue(activity!.hora) && (
-            <p className="mt-1 text-xs text-amber-700 dark:text-amber-400">
-              Horario actual: “{activity!.hora}”. Elegí una hora con el selector para
-              reemplazarlo; si lo dejás vacío, la actividad queda sin horario.
-            </p>
-          )}
-        </Field>
+        <HoraField initial={activity?.hora} onChange={setHora} />
         <Field label="Descripción (opcional)">
           <textarea
             value={descripcion}
@@ -319,7 +398,7 @@ export function PdfModal({ activityId, onClose }: { activityId: string; onClose:
   }
 
   return (
-    <Modal title="Subir PDF" onClose={onClose}>
+    <Modal title="Subir documento" onClose={onClose}>
       <form onSubmit={save}>
         <ErrorNote msg={error} />
         <Field label="Nombre (opcional)">
@@ -330,17 +409,18 @@ export function PdfModal({ activityId, onClose }: { activityId: string; onClose:
             placeholder="Ej: Entrada Torre Eiffel"
           />
         </Field>
-        <Field label="Archivo PDF">
+        <Field label="Archivo (PDF, PNG o JPG)">
           <input
             required
             type="file"
             name="file"
-            accept="application/pdf"
+            accept="application/pdf,image/png,image/jpeg"
             className="w-full text-sm file:mr-3 file:rounded-lg file:border-0 file:bg-stone-900 file:px-3 file:py-2 file:text-white dark:file:bg-white dark:file:text-stone-900"
           />
         </Field>
+        <p className="mb-3 text-xs text-stone-400">Tamaño máximo ~4 MB.</p>
         <PrimaryButton type="submit" pending={busy}>
-          Subir PDF
+          Subir archivo
         </PrimaryButton>
       </form>
     </Modal>
@@ -473,14 +553,7 @@ export function PromoteModal({
             placeholder="¿Qué hacemos?"
           />
         </Field>
-        <Field label="Horario (opcional)">
-          <input
-            type="time"
-            value={hora}
-            onChange={(e) => setHora(e.target.value)}
-            className={inputClass}
-          />
-        </Field>
+        <HoraField onChange={setHora} />
         <EmojiField value={icono} onChange={setIcono} />
         <PrimaryButton type="submit" pending={busy}>
           Promover a actividad

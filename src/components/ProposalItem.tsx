@@ -43,7 +43,7 @@ export function ProposalItem({
   }
 
   return (
-    <div className="rounded-xl bg-white/60 p-3 dark:bg-stone-900/40">
+    <div className="rounded-xl border border-stone-300 bg-white p-3 shadow-sm dark:border-stone-700 dark:bg-stone-900/40">
       <div className="flex items-start gap-2">
         <span className={"mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full " + c.dot} />
         <div className="min-w-0 flex-1">

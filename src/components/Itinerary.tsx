@@ -81,7 +81,7 @@ export function Itinerary({
       </header>
 
       {/* Selectores sticky: zona + día */}
-      <div className="sticky top-0 z-30 -mx-4 mb-5 border-b border-stone-200/70 bg-white/90 px-4 pb-3 pt-3 backdrop-blur-md dark:border-stone-800/70 dark:bg-stone-950/90">
+      <div className="sticky top-0 z-30 -mx-4 mb-5 border-b border-stone-300 bg-white/95 px-4 pb-3 pt-3 shadow-sm backdrop-blur-md dark:border-stone-800 dark:bg-stone-950/90">
         <div className="flex items-center gap-2">
           <div className="min-w-0 flex-1">
             <ZoneTabs zones={zones} active={activeZone.id} onSelect={selectZone} />

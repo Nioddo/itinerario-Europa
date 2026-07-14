@@ -15,7 +15,7 @@ export function ZoneHero({ zone, editor }: { zone: Zone; editor: boolean }) {
   const maps = zone.link_alojamiento;
 
   return (
-    <div className={`overflow-hidden rounded-2xl border shadow-sm ${c.heroBorder} ${c.hero}`}>
+    <div className={`overflow-hidden rounded-2xl border shadow ${c.heroBorder} ${c.hero}`}>
       <div className="px-5 py-4">
         <div className="flex items-baseline justify-between gap-3">
           <h2 className="font-display text-2xl font-bold leading-tight">{zone.nombre}</h2>

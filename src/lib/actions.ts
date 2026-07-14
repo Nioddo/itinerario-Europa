@@ -141,15 +141,19 @@ export async function addLinkAttachment(input: {
   });
 }
 
+/** Tipos de archivo permitidos como adjunto (documentos e imágenes). */
+const ALLOWED_FILE_TYPES = new Set(["application/pdf", "image/png", "image/jpeg"]);
+
 export async function uploadPdfAttachment(formData: FormData): Promise<ActionResult> {
   return run(async () => {
     const activityId = String(formData.get("activityId") ?? "");
     const label = String(formData.get("label") ?? "").trim();
     const file = formData.get("file");
     if (!activityId) throw new Error("Falta la actividad.");
-    if (!(file instanceof File) || file.size === 0) throw new Error("Elegí un archivo PDF.");
-    if (file.type !== "application/pdf") throw new Error("El archivo debe ser un PDF.");
-    if (file.size > 15 * 1024 * 1024) throw new Error("El PDF supera los 15 MB.");
+    if (!(file instanceof File) || file.size === 0) throw new Error("Elegí un archivo.");
+    if (!ALLOWED_FILE_TYPES.has(file.type))
+      throw new Error("El archivo debe ser PDF, PNG o JPG.");
+    if (file.size > 10 * 1024 * 1024) throw new Error("El archivo supera los 10 MB.");
 
     const sb = getAdminClient();
     const safe = file.name.replace(/[^a-zA-Z0-9._-]/g, "_");
@@ -157,13 +161,13 @@ export async function uploadPdfAttachment(formData: FormData): Promise<ActionRes
     const buffer = Buffer.from(await file.arrayBuffer());
     const { error: upErr } = await sb.storage
       .from(TICKETS_BUCKET)
-      .upload(path, buffer, { contentType: "application/pdf", upsert: false });
+      .upload(path, buffer, { contentType: file.type, upsert: false });
     if (upErr) throw new Error(upErr.message);
 
     const { error } = await sb.from("attachments").insert({
       activity_id: activityId,
       tipo: "pdf",
-      label: label || file.name.replace(/\.pdf$/i, ""),
+      label: label || file.name.replace(/\.(pdf|png|jpe?g)$/i, ""),
       storage_path: path,
     });
     if (error) throw new Error(error.message);
