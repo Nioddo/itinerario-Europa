@@ -1,0 +1,814 @@
+{
+  "viaje": {
+    "titulo": "Europa 2026",
+    "subtitulo": "Viaje en familia",
+    "fecha_desde": "2026-07-14",
+    "fecha_hasta": "2026-08-07"
+  },
+  "zones": [
+    {
+      "id": "z1",
+      "nombre": "Ida + Galicia",
+      "subtitulo": "Isla de Arousa",
+      "fecha_desde": "2026-07-14",
+      "fecha_hasta": "2026-07-19",
+      "color": "verde",
+      "orden": 1,
+      "info_alojamiento": "Isla de Arousa · 5 noches (15–20/7) · 155 €/noche · pago en efectivo",
+      "link_alojamiento": null,
+      "days": [
+        {
+          "id": "z1-d1",
+          "fecha": "2026-07-14",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z1-d1-a1",
+              "hora": "Noche",
+              "titulo": "Vuelo Buenos Aires → Madrid",
+              "descripcion": "IB0108 · Reservas HW5M9 / HW5L5. Salida por la noche.",
+              "tipo": "viaje",
+              "medio_viaje": "avion",
+              "orden": 1,
+              "attachments": []
+            }
+          ],
+          "proposals": []
+        },
+        {
+          "id": "z1-d2",
+          "fecha": "2026-07-15",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z1-d2-a1",
+              "hora": null,
+              "titulo": "Vuelo Madrid → Santiago de Compostela",
+              "descripcion": "IB1137 · Reservas J4RPH / J4S4X. Llegada 21:00.",
+              "tipo": "viaje",
+              "medio_viaje": "avion",
+              "orden": 1,
+              "attachments": []
+            },
+            {
+              "id": "z1-d2-a2",
+              "hora": "22:00 aprox",
+              "titulo": "Auto Santiago → Isla de Arousa",
+              "descripcion": "Llegada 00:00.",
+              "tipo": "viaje",
+              "medio_viaje": "auto",
+              "orden": 2,
+              "attachments": []
+            }
+          ],
+          "proposals": []
+        },
+        {
+          "id": "z1-d3",
+          "fecha": "2026-07-16",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z1-d3-a1",
+              "hora": null,
+              "titulo": "Día en la Isla de Arousa",
+              "descripcion": "Visitar la isla, familia, etc.",
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 1,
+              "attachments": []
+            }
+          ],
+          "proposals": []
+        },
+        {
+          "id": "z1-d4",
+          "fecha": "2026-07-17",
+          "nota_del_dia": null,
+          "activities": [],
+          "proposals": [
+            { "id": "z1-d4-p1", "texto": "Ir a A Coruña", "orden": 1, "links": [] },
+            { "id": "z1-d4-p2", "texto": "Ir a Santiago de Compostela a visitar la Catedral", "orden": 2, "links": [] }
+          ]
+        },
+        {
+          "id": "z1-d5",
+          "fecha": "2026-07-18",
+          "nota_del_dia": "Fiesta de la Virgen del Carmen, todo el día en la isla.",
+          "activities": [
+            {
+              "id": "z1-d5-a1",
+              "hora": "Mediodía",
+              "titulo": "Comemos en lo de Ana",
+              "descripcion": null,
+              "tipo": "comida",
+              "medio_viaje": null,
+              "orden": 1,
+              "attachments": []
+            },
+            {
+              "id": "z1-d5-a2",
+              "hora": "Noche",
+              "titulo": "Cena afuera",
+              "descripcion": "Lugar a definir.",
+              "tipo": "comida",
+              "medio_viaje": null,
+              "orden": 2,
+              "attachments": []
+            }
+          ],
+          "proposals": []
+        },
+        {
+          "id": "z1-d6",
+          "fecha": "2026-07-19",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z1-d6-a1",
+              "hora": "21:00",
+              "titulo": "Final del Mundial 🏆",
+              "descripcion": null,
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 1,
+              "attachments": []
+            }
+          ],
+          "proposals": [
+            { "id": "z1-d6-p1", "texto": "Buscar qué hacer durante el día", "orden": 1, "links": [] },
+            { "id": "z1-d6-p2", "texto": "Visitar playas", "orden": 2, "links": [] },
+            { "id": "z1-d6-p3", "texto": "Vigo", "orden": 3, "links": [] },
+            { "id": "z1-d6-p4", "texto": "Pontevedra", "orden": 4, "links": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "z2",
+      "nombre": "Londres",
+      "subtitulo": "Inglaterra",
+      "fecha_desde": "2026-07-20",
+      "fecha_hasta": "2026-07-23",
+      "color": "rojo",
+      "orden": 2,
+      "info_alojamiento": "Bell Street, Londres NW1 · 1 cama doble, 1 simple, 1 sofá cama · 4 noches (20–23/7)",
+      "link_alojamiento": "https://www.google.com/maps/place//@51.521025,-0.16979,17z",
+      "days": [
+        {
+          "id": "z2-d1",
+          "fecha": "2026-07-20",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z2-d1-a1",
+              "hora": "07:00",
+              "titulo": "Vuelo Santiago → Londres",
+              "descripcion": "VY6226 · Reserva SHD9JS. Llegada 10:00. Después hotel; con suerte al mediodía nos liberamos.",
+              "tipo": "viaje",
+              "medio_viaje": "avion",
+              "orden": 1,
+              "attachments": []
+            }
+          ],
+          "proposals": [
+            {
+              "id": "z2-d1-p1",
+              "texto": "Free walking tour a la tarde — empieza en Trafalgar Square: Westminster, Big Ben, Buckingham Palace, National Gallery, St James's Park.",
+              "orden": 1,
+              "links": [
+                { "id": "z2-d1-p1-l1", "label": "Free tour Londres", "url": "https://www.civitatis.com/ar/londres/free-tour-londres/" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "z2-d2",
+          "fecha": "2026-07-21",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z2-d2-a1",
+              "hora": "11:00",
+              "titulo": "Tour de los Beatles",
+              "descripcion": "3 hs, termina en Abbey Road, cerca de Camden Town.",
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 1,
+              "attachments": [
+                { "id": "z2-d2-a1-l1", "tipo": "link", "label": "Reservar tour Beatles", "url": "https://www.civitatis.com/ar/londres/tour-beatles-londres/", "storage_path": null }
+              ]
+            }
+          ],
+          "proposals": [
+            {
+              "id": "z2-d2-p1",
+              "texto": "Ir a Camden Town después del tour.",
+              "orden": 1,
+              "links": [
+                { "id": "z2-d2-p1-l1", "label": "Free tour Camden Town", "url": "https://www.civitatis.com/ar/londres/free-tour-camden-town/" }
+              ]
+            },
+            {
+              "id": "z2-d2-p2",
+              "texto": "Museo Británico.",
+              "orden": 2,
+              "links": [
+                { "id": "z2-d2-p2-l1", "label": "Free tour Museo Británico", "url": "https://www.civitatis.com/ar/londres/free-tour-museo-britanico/" }
+              ]
+            },
+            {
+              "id": "z2-d2-p3",
+              "texto": "Recorrido Día 3: Little Venice → Camden Town (Stables Market, Camden High St) → Primrose Hill → Museo Británico → Torre de Londres (£37 adulto, cierra 17:30) → Tower Bridge (mirador Potters Fields Park) → The Shard al atardecer.",
+              "orden": 3,
+              "links": [
+                { "id": "z2-d2-p3-l1", "label": "Torre de Londres", "url": "https://www.hrp.org.uk/tower-of-london/" },
+                { "id": "z2-d2-p3-l2", "label": "Mapa del recorrido", "url": "https://www.google.com/maps/d/viewer?mid=1O1sacThuX1AfPVeOcG6hOX17wBz4_G4" }
+              ]
+            },
+            {
+              "id": "z2-d2-p4",
+              "texto": "Covent Garden abre 10–20 (Apple Market hasta las 18).",
+              "orden": 4,
+              "links": []
+            }
+          ]
+        },
+        {
+          "id": "z2-d3",
+          "fecha": "2026-07-22",
+          "nota_del_dia": "Nada fijo por ahora.",
+          "activities": [],
+          "proposals": [
+            {
+              "id": "z2-d3-p1",
+              "texto": "Recorrido Día 2: Notting Hill y mercado de Portobello (todos los días menos domingo) → Hyde Park (cambio de guardia en Buckingham 11:00, llegar antes de las 10) → Museo de Historia Natural (gratis) → Royal Albert Hall → Covent Garden → Trafalgar Square → Piccadilly Circus → Regent Street → Soho.",
+              "orden": 1,
+              "links": [
+                { "id": "z2-d3-p1-l1", "label": "Free tour Notting Hill", "url": "https://www.civitatis.com/ar/londres/free-tour-notting-hill/" },
+                { "id": "z2-d3-p1-l2", "label": "Free tour Soho / Covent Garden", "url": "https://www.civitatis.com/ar/londres/free-tour-soho-covent-garden/" },
+                { "id": "z2-d3-p1-l3", "label": "Mapa del recorrido", "url": "https://www.google.com/maps/d/viewer?mid=1fRjMEG3z1znemhJPnxm5rEhQlQIKS68" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "z2-d4",
+          "fecha": "2026-07-23",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z2-d4-a1",
+              "hora": "13:30",
+              "titulo": "Comida en St John's",
+              "descripcion": "Cerca de St Paul's Cathedral.",
+              "tipo": "comida",
+              "medio_viaje": null,
+              "orden": 1,
+              "attachments": []
+            }
+          ],
+          "proposals": [
+            {
+              "id": "z2-d4-p1",
+              "texto": "Recorrido Día 1: St James's Park → Palacio de Buckingham → Abadía de Westminster (£125 los 4) → Big Ben + Puente de Westminster → London Eye (£29 estándar / £44 fast track; combo con river cruise £50) → Leake Street Tunnel → Millennium Bridge → Catedral de San Pablo → St Dunstan in the East → Leadenhall Market (Harry Potter) → Sky Garden gratis a última hora (alternativas: The Garden at 120, Horizon 22).",
+              "orden": 1,
+              "links": [
+                { "id": "z2-d4-p1-l1", "label": "Horizon 22", "url": "https://horizon22.co.uk/book/" },
+                { "id": "z2-d4-p1-l2", "label": "Mapa del recorrido", "url": "https://www.google.com/maps/d/viewer?mid=11CKWEk0O_llcQt5UxeCLSLOuqaPiCjM" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "z3",
+      "nombre": "Edimburgo",
+      "subtitulo": "Escocia",
+      "fecha_desde": "2026-07-24",
+      "fecha_hasta": "2026-07-25",
+      "color": "azul",
+      "orden": 3,
+      "info_alojamiento": "1 Fleshmarket Cl, Edinburgh EH1 1PB · 1 cama doble + sofá cama · noches 24 y 25/7",
+      "link_alojamiento": null,
+      "days": [
+        {
+          "id": "z3-d1",
+          "fecha": "2026-07-24",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z3-d1-a1",
+              "hora": "08:00",
+              "titulo": "Tren LNER Londres King's Cross → Edimburgo",
+              "descripcion": "Reserva 26SXIVLPZB. Llegada al mediodía.",
+              "tipo": "viaje",
+              "medio_viaje": "tren",
+              "orden": 1,
+              "attachments": []
+            },
+            {
+              "id": "z3-d1-a2",
+              "hora": "17:00",
+              "titulo": "Free tour de Edimburgo",
+              "descripcion": null,
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 2,
+              "attachments": [
+                { "id": "z3-d1-a2-l1", "tipo": "link", "label": "Free tour Edimburgo", "url": "https://www.civitatis.com/ar/edimburgo/free-tour-edimburgo/", "storage_path": null }
+              ]
+            }
+          ],
+          "proposals": [
+            {
+              "id": "z3-d1-p1",
+              "texto": "Averiguar Royal Edinburgh Ticket (Castillo + Yate Britannia + Holyrood + bus).",
+              "orden": 1,
+              "links": [
+                { "id": "z3-d1-p1-l1", "label": "Royal Edinburgh Ticket", "url": "https://www.civitatis.com/es/edimburgo/royal-edinburgh-ticket/" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "z3-d2",
+          "fecha": "2026-07-25",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z3-d2-a1",
+              "hora": "Tarde",
+              "titulo": "Recorrido Harry Potter",
+              "descripcion": "Victoria Street, Greyfriars, etc.",
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 1,
+              "attachments": []
+            },
+            {
+              "id": "z3-d2-a2",
+              "hora": "20:30",
+              "titulo": "Free tour de fantasmas",
+              "descripcion": null,
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 2,
+              "attachments": [
+                { "id": "z3-d2-a2-l1", "tipo": "link", "label": "Free tour fantasmas", "url": "https://www.civitatis.com/ar/edimburgo/free-tour-fantasmas-edimburgo/", "storage_path": null }
+              ]
+            }
+          ],
+          "proposals": [
+            {
+              "id": "z3-d2-p1",
+              "texto": "Recorrido Día 1: Castillo de Edimburgo (abre 9:30, ~2 hs, cañón de la una) → Royal Mile → Scotch Whisky Experience (o Camera Obscura) → Gladstone's Land → Victoria Street → Grassmarket → Cementerio Greyfriars → Museo Nacional de Escocia (gratis, oveja Dolly) → Catedral St Giles → Mary King's Close → Palacio de Holyrood → Calton Hill al atardecer.",
+              "orden": 1,
+              "links": [
+                { "id": "z3-d2-p1-l1", "label": "Reservar Mary King's Close", "url": "https://www.getyourguide.es/edimburgo-l44/edimburgo-tour-por-debajo-de-la-royal-mile-t76378/" },
+                { "id": "z3-d2-p1-l2", "label": "Mapa del recorrido", "url": "https://www.google.com/maps/d/viewer?mid=1FpW4kBB8sBMGQtpyGMq3SzGPDVdSo_A" }
+              ]
+            },
+            {
+              "id": "z3-d2-p2",
+              "texto": "Recorrido Día 2: Monumento a Scott (abre 10:00, 287 escalones) → Princes Street Gardens → Galería Nacional (gratis) → Dean Village → Jardín Botánico → Stockbridge (Circus Lane) → Charlotte Square → Arthur's Seat al atardecer (1 h de subida, calzado cómodo y agua).",
+              "orden": 2,
+              "links": [
+                { "id": "z3-d2-p2-l1", "label": "Mapa del recorrido", "url": "https://www.google.com/maps/d/viewer?mid=1tUotZmdo--eLKCkPc5BJqNSVKsvbA8Q" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "z4",
+      "nombre": "Highlands",
+      "subtitulo": "En auto",
+      "fecha_desde": "2026-07-26",
+      "fecha_hasta": "2026-07-27",
+      "color": "violeta",
+      "orden": 4,
+      "info_alojamiento": "26/7: 63 Argyle St, Inverness IV2 3BD (1 doble + 2 chicas) · 27/7: Hilton Edinburgh Airport (dormimos cerca del aeropuerto porque el vuelo del 28 sale 5:40)",
+      "link_alojamiento": null,
+      "days": [
+        {
+          "id": "z4-d1",
+          "fecha": "2026-07-26",
+          "nota_del_dia": "Ruta Edimburgo → Balmoral → Inverness (~260 km, 4:45 hs de manejo).",
+          "activities": [
+            {
+              "id": "z4-d1-a1",
+              "hora": "07:30",
+              "titulo": "Retiramos el auto y salimos de Edimburgo",
+              "descripcion": null,
+              "tipo": "viaje",
+              "medio_viaje": "auto",
+              "orden": 1,
+              "attachments": []
+            },
+            {
+              "id": "z4-d1-a2",
+              "hora": "08:45 aprox",
+              "titulo": "Parada en Perth",
+              "descripcion": "Café rápido, 20–30 min.",
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 2,
+              "attachments": []
+            },
+            {
+              "id": "z4-d1-a3",
+              "hora": "Mañana",
+              "titulo": "Cruce del Parque Nacional Cairngorms (A93)",
+              "descripcion": "Parada en el mirador The Devil's Elbow (10 min); parada en Braemar.",
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 3,
+              "attachments": []
+            },
+            {
+              "id": "z4-d1-a4",
+              "hora": "11:30",
+              "titulo": "Balmoral Castle",
+              "descripcion": "Residencia de verano de la familia real (1–1.5 hs): jardines, salón de baile, senderos.",
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 4,
+              "attachments": []
+            },
+            {
+              "id": "z4-d1-a5",
+              "hora": "Tarde",
+              "titulo": "Balmoral → Inverness",
+              "descripcion": "Por Braemar y Lecht Pass. Llegada 17:30–18:30.",
+              "tipo": "viaje",
+              "medio_viaje": "auto",
+              "orden": 5,
+              "attachments": []
+            },
+            {
+              "id": "z4-d1-a6",
+              "hora": "Tarde",
+              "titulo": "Paseo por Inverness",
+              "descripcion": "Castillo y río Ness. Dormimos en Inverness.",
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 6,
+              "attachments": []
+            }
+          ],
+          "proposals": []
+        },
+        {
+          "id": "z4-d2",
+          "fecha": "2026-07-27",
+          "nota_del_dia": "Ruta Inverness → Loch Ness → Fort William → Glencoe → Edimburgo (~290 km, 5:30–6 hs).",
+          "activities": [
+            {
+              "id": "z4-d2-a1",
+              "hora": "08:30",
+              "titulo": "Salida por la orilla oeste del Lago Ness",
+              "descripcion": null,
+              "tipo": "viaje",
+              "medio_viaje": "auto",
+              "orden": 1,
+              "attachments": []
+            },
+            {
+              "id": "z4-d2-a2",
+              "hora": "Mañana",
+              "titulo": "Urquhart Castle",
+              "descripcion": "Ruinas frente al lago (45–60 min).",
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 2,
+              "attachments": []
+            },
+            {
+              "id": "z4-d2-a3",
+              "hora": "Mediodía",
+              "titulo": "Fort William",
+              "descripcion": "Almuerzo rápido, vistas al Ben Nevis.",
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 3,
+              "attachments": []
+            },
+            {
+              "id": "z4-d2-a4",
+              "hora": "Tarde",
+              "titulo": "Glencoe",
+              "descripcion": "Lo más espectacular del viaje: Three Sisters, Visitor Centre (1–1.5 hs).",
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 4,
+              "attachments": []
+            },
+            {
+              "id": "z4-d2-a5",
+              "hora": null,
+              "titulo": "Regreso a Edimburgo",
+              "descripcion": "Por Rannoch Moor y Callander. Llegada 19:30–20:00. Dormimos en el Hilton del aeropuerto.",
+              "tipo": "viaje",
+              "medio_viaje": "auto",
+              "orden": 5,
+              "attachments": []
+            }
+          ],
+          "proposals": []
+        }
+      ]
+    },
+    {
+      "id": "z5",
+      "nombre": "París",
+      "subtitulo": "Francia",
+      "fecha_desde": "2026-07-28",
+      "fecha_hasta": "2026-07-30",
+      "color": "dorado",
+      "orden": 5,
+      "info_alojamiento": "20 Rue Duhesme, París 75018 (Montmartre, metro Lamarck-Caulaincourt) · 1 doble + 2 chicas · noches 28–30/7",
+      "link_alojamiento": null,
+      "days": [
+        {
+          "id": "z5-d1",
+          "fecha": "2026-07-28",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z5-d1-a1",
+              "hora": "05:40",
+              "titulo": "Vuelo Edimburgo → París CDG",
+              "descripcion": "AF1887 · Reserva YW66QI. Llegada 09:00.",
+              "tipo": "viaje",
+              "medio_viaje": "avion",
+              "orden": 1,
+              "attachments": []
+            }
+          ],
+          "proposals": [
+            {
+              "id": "z5-d1-p1",
+              "texto": "Tarde en Montmartre (estamos alojados ahí): Muro Je t'aime, Rue Lepic, Place du Tertre, Basílica del Sagrado Corazón; a la noche Pigalle y Moulin Rouge por afuera.",
+              "orden": 1,
+              "links": []
+            },
+            {
+              "id": "z5-d1-p2",
+              "texto": "Parte del recorrido Día 1: Iglesia de la Madeleine → Jardín de las Tullerías → Plaza de la Concordia → Campos Elíseos → Arco del Triunfo.",
+              "orden": 2,
+              "links": [
+                { "id": "z5-d1-p2-l1", "label": "Mapa del recorrido", "url": "https://www.google.com/maps/d/viewer?mid=1B6L5PncYojr68CmnxZQbuE9JiV8YtQM" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "z5-d2",
+          "fecha": "2026-07-29",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z5-d2-a1",
+              "hora": "11:00",
+              "titulo": "Tour de la Segunda Guerra Mundial",
+              "descripcion": null,
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 1,
+              "attachments": []
+            },
+            {
+              "id": "z5-d2-a2",
+              "hora": "21:00",
+              "titulo": "Ascenso a la Torre Eiffel",
+              "descripcion": "Cima en ascensor: 36,70 € adulto / 18,40 € joven (12-24). Entrada ya comprada (134 USD).",
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 2,
+              "attachments": []
+            }
+          ],
+          "proposals": [
+            {
+              "id": "z5-d2-p1",
+              "texto": "Recorrido Día 3: Sainte Chapelle → Notre Dame → Conciergerie → Ayuntamiento → Le Marais (Plaza des Vosges) → Barrio Latino (Shakespeare & Co, Panteón) → Jardines de Luxemburgo → Torre Montparnasse.",
+              "orden": 1,
+              "links": [
+                { "id": "z5-d2-p1-l1", "label": "Reservar Notre Dame (gratis)", "url": "https://resa.notredamedeparis.fr/en/reservationindividuelle/tickets" },
+                { "id": "z5-d2-p1-l2", "label": "Mapa del recorrido", "url": "https://www.google.com/maps/d/viewer?mid=1JyGe5cvK3bdeQXyaMXxaeIjg_BoAaJo" }
+              ]
+            },
+            {
+              "id": "z5-d2-p2",
+              "texto": "Trocadero de noche para ver la Torre Eiffel iluminada (destellos cada hora en punto).",
+              "orden": 2,
+              "links": []
+            }
+          ]
+        },
+        {
+          "id": "z5-d3",
+          "fecha": "2026-07-30",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z5-d3-a1",
+              "hora": "10:00",
+              "titulo": "Museo del Louvre",
+              "descripcion": "2-3 hs. Ver las obras clave antes de ir.",
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 1,
+              "attachments": [
+                { "id": "z5-d3-a1-l1", "tipo": "link", "label": "Obras que ver en el Louvre", "url": "https://www.viajeroscallejeros.com/obras-que-ver-en-el-louvre/", "storage_path": null }
+              ]
+            }
+          ],
+          "proposals": [
+            {
+              "id": "z5-d3-p1",
+              "texto": "Recorrido Día 2 (arranca en el Louvre): Jardines del Palacio Real → Galería Vivienne → Biblioteca Nacional → Plaza Vendôme → Ópera Garnier (cierra 17:00) → Galerías Lafayette (terraza con vistas) → Passage des Panoramas → Les Halles (Centro Pompidou) → paseo en barco por el Sena al atardecer.",
+              "orden": 1,
+              "links": [
+                { "id": "z5-d3-p1-l1", "label": "Paseo en barco por el Sena", "url": "https://www.civitatis.com/es/paris/paseo-barco-sena/" },
+                { "id": "z5-d3-p1-l2", "label": "Mapa del recorrido", "url": "https://www.google.com/maps/d/viewer?mid=1vuNx4VmIwU6DmuZR2dvtsZqz5UQ78oI" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "z6",
+      "nombre": "Barcelona",
+      "subtitulo": "España",
+      "fecha_desde": "2026-07-31",
+      "fecha_hasta": "2026-08-05",
+      "color": "naranja",
+      "orden": 6,
+      "info_alojamiento": "Barcelona · 6 noches (31/7 al 5/8) · 190 €/noche efectivo (Maru) · 1 doble + 2 chicas",
+      "link_alojamiento": null,
+      "days": [
+        {
+          "id": "z6-d1",
+          "fecha": "2026-07-31",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z6-d1-a1",
+              "hora": "14:40",
+              "titulo": "Tren TGV París → Barcelona",
+              "descripcion": "Llegada 21:00.",
+              "tipo": "viaje",
+              "medio_viaje": "tren",
+              "orden": 1,
+              "attachments": []
+            }
+          ],
+          "proposals": []
+        },
+        {
+          "id": "z6-d2",
+          "fecha": "2026-08-01",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z6-d2-a1",
+              "hora": null,
+              "titulo": "Día con los tíos abuelos y Guillem",
+              "descripcion": "Probablemente playa.",
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 1,
+              "attachments": []
+            }
+          ],
+          "proposals": []
+        },
+        {
+          "id": "z6-d3",
+          "fecha": "2026-08-02",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z6-d3-a1",
+              "hora": null,
+              "titulo": "Día en familia / playa",
+              "descripcion": "Ídem día anterior.",
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 1,
+              "attachments": []
+            }
+          ],
+          "proposals": []
+        },
+        {
+          "id": "z6-d4",
+          "fecha": "2026-08-03",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z6-d4-a1",
+              "hora": "16:30",
+              "titulo": "Sagrada Familia",
+              "descripcion": "Entrada comprada (186,86 USD).",
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 1,
+              "attachments": []
+            }
+          ],
+          "proposals": [
+            { "id": "z6-d4-p1", "texto": "Ir temprano al Camp Nou", "orden": 1, "links": [] },
+            { "id": "z6-d4-p2", "texto": "Ver qué hacer el resto del día", "orden": 2, "links": [] }
+          ]
+        },
+        {
+          "id": "z6-d5",
+          "fecha": "2026-08-04",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z6-d5-a1",
+              "hora": "09:30",
+              "titulo": "Park Güell",
+              "descripcion": "Entrada comprada (84,29 USD).",
+              "tipo": "actividad",
+              "medio_viaje": null,
+              "orden": 1,
+              "attachments": []
+            }
+          ],
+          "proposals": [
+            { "id": "z6-d5-p1", "texto": "Organizar salida con los chicos a la noche", "orden": 1, "links": [] },
+            { "id": "z6-d5-p2", "texto": "Ver qué hacer el resto del día", "orden": 2, "links": [] }
+          ]
+        },
+        {
+          "id": "z6-d6",
+          "fecha": "2026-08-05",
+          "nota_del_dia": null,
+          "activities": [],
+          "proposals": [
+            { "id": "z6-d6-p1", "texto": "Probablemente compras", "orden": 1, "links": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "z7",
+      "nombre": "Madrid + vuelta",
+      "subtitulo": "Regreso a Argentina",
+      "fecha_desde": "2026-08-06",
+      "fecha_hasta": "2026-08-07",
+      "color": "gris",
+      "orden": 7,
+      "info_alojamiento": null,
+      "link_alojamiento": null,
+      "days": [
+        {
+          "id": "z7-d1",
+          "fecha": "2026-08-06",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z7-d1-a1",
+              "hora": null,
+              "titulo": "Tren Barcelona → Madrid",
+              "descripcion": "x3, ~71 USD c/u.",
+              "tipo": "viaje",
+              "medio_viaje": "tren",
+              "orden": 1,
+              "attachments": []
+            }
+          ],
+          "proposals": [
+            { "id": "z7-d1-p1", "texto": "Decidir a qué hora ir a Madrid", "orden": 1, "links": [] }
+          ]
+        },
+        {
+          "id": "z7-d2",
+          "fecha": "2026-08-07",
+          "nota_del_dia": null,
+          "activities": [
+            {
+              "id": "z7-d2-a1",
+              "hora": null,
+              "titulo": "Vuelo Madrid → Buenos Aires",
+              "descripcion": "Llegada a Argentina.",
+              "tipo": "viaje",
+              "medio_viaje": "avion",
+              "orden": 1,
+              "attachments": []
+            }
+          ],
+          "proposals": []
+        }
+      ]
+    }
+  ]
+}

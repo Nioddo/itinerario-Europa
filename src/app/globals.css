@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+:root.dark {
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Compensa los headers sticky al saltar con anclas */
+    scroll-padding-top: 5.5rem;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-white text-stone-900 antialiased;
+    @apply dark:bg-stone-950 dark:text-stone-100;
+    /* Blanco con un velo cálido muy suave arriba, para que no sea todo plano */
+    background-image: linear-gradient(180deg, #fff7ed 0%, #ffffff 340px);
+  }
+  .dark body {
+    background-image: linear-gradient(180deg, #292524 0%, #0c0a09 340px);
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  /* Skeleton shimmer */
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+  .shimmer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.35),
+      transparent
+    );
+    animation: shimmer 1.5s infinite;
+  }
+}
